@@ -1,15 +1,21 @@
 import React from "react";
-import Herosection from "../components/Herosection";
+import Feture from "../components/home/Feture";
+import Herosection from "../components/home/Herosection";
+import { DownarrowIcon } from "../components/icons";
 import Navbar from "../components/navbar/Navbar";
 
 const Home = () => {
   return (
     <>
-      <header>
+      <header className="h-[100vh]">
         <div className="hero"></div>
         <Navbar />
         <Herosection />
+        <div className="text-white absolute bottom-7 flex justify-center animate-bounce w-full -z-10">
+          <DownarrowIcon />
+        </div>
       </header>
+      <Feture />
     </>
   );
 };

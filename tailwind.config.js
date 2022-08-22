@@ -7,6 +7,15 @@ module.exports = {
     "node_modules/react-daisyui/dist/**/*.js",
   ],
   theme: {
+    screens: {
+      sm: "500px",
+      md: "900px",
+      lg: "1200px",
+    },
+    fontFamily: {
+      Poppins: ["Poppins", "sans-serif"],
+      Noto: ["Noto Sans JP", "sans-serif"],
+    },
     extend: {
       backgroundImage: {
         hero: "url('./assets/hero.webp')",

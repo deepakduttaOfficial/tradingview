@@ -220,3 +220,20 @@ export const SearchIcon = () => {
     </svg>
   );
 };
+
+export const DownarrowIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 23 23"
+      width="23"
+      height="23"
+      className="-rotate-90"
+    >
+      <path
+        fill="currentColor"
+        d="M16.47 22.53a.75.75 0 1 0 1.06-1.06l-1.06 1.06zm1.06-21A.75.75 0 0 0 16.47.47l1.06 1.06zM6.85 11.15l-.53-.53.53.53zm0 .7l-.53.53.53-.53zM16.47.47L6.32 10.62l1.06 1.06L17.53 1.53 16.47.47zM6.32 12.38l10.15 10.15 1.06-1.06L7.38 11.32l-1.06 1.06zm0-1.76a1.25 1.25 0 0 0 0 1.76l1.06-1.06c.1.1.1.26 0 .36l-1.06-1.06z"
+      ></path>
+    </svg>
+  );
+};

@@ -6,6 +6,6 @@
   top: 0;
   width: 100%;
   background-position: 70% 10%;
-  z-index: -100;
+  z-index: -30;
   filter: contrast(90%);
 }
