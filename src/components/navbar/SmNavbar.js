@@ -32,7 +32,7 @@ const SmNavbar = () => {
             </a>
           </li>
           <li tabindex="0" className="w-full">
-            <a href="#" className="py-[10px] px-4 hover:bg-[#f0f3fa] w-full">
+            <a className="py-[10px] px-4 hover:bg-[#f0f3fa] w-full">
               <CommunityIcon />
               <div className="ml-2 grow ">
                 <span className="font-medium text-lg">Community</span>

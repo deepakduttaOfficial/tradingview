@@ -16,7 +16,7 @@ const LgNavbar = () => {
           <label className="font-medium hover:bg-[#fff3] rounded-full text-base px-4 py-2">
             Products
           </label>
-          <ul class="py-2 bg-white text-black rounded-lg w-[18rem] ">
+          <ul class="py-2 bg-white text-black rounded-lg w-[18rem] shadow-xl">
             <li className="w-full border-b">
               <a href="#" className="py-1 px-4  hover:bg-[#f0f3fa] w-full">
                 <ChartIcon />
@@ -66,7 +66,7 @@ const LgNavbar = () => {
           >
             Community
           </label>
-          <ul class="py-2 bg-white text-black rounded-lg w-[16rem] ">
+          <ul class="py-2 bg-white text-black rounded-lg w-[16rem] shadow-xl ">
             <li className="w-full border-b">
               <a href="#" className="py-2 px-4  hover:bg-[#f0f3fa] w-full">
                 <LiveStrimeIcon />
@@ -94,7 +94,7 @@ const LgNavbar = () => {
           >
             Markets
           </a>
-          <ul class="py-2 bg-white text-black rounded-lg w-[15rem] ">
+          <ul class="py-2 bg-white text-black rounded-lg w-[15rem] shadow-xl">
             <li className=" w-full border-b ">
               <a href="#" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
                 <div className="ml-2">

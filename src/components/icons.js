@@ -180,6 +180,7 @@ export const RightArrow = () => {
       viewBox="0 0 28 28"
       width="28"
       height="28"
+      className="inline-block"
     >
       <path
         fill="currentColor"

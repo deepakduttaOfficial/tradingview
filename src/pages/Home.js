@@ -1,6 +1,8 @@
 import React from "react";
 import Feture from "../components/home/Feture";
 import Herosection from "../components/home/Herosection";
+import Marketsummary from "../components/home/Marketsummary/Marketsummary";
+import Snaps from "../components/home/Snaps/Snaps";
 import { DownarrowIcon } from "../components/icons";
 import Navbar from "../components/navbar/Navbar";
 
@@ -16,6 +18,10 @@ const Home = () => {
         </div>
       </header>
       <Feture />
+      <div className="px-8">
+        <Marketsummary />
+        <Snaps />
+      </div>
     </>
   );
 };

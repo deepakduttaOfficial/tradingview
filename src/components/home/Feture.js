@@ -16,7 +16,7 @@ const Feture = () => {
         <BgButton>Explore features</BgButton>
       </div>
       <div className="mt-14">
-        <video width={"100%"} loop autoPlay>
+        <video width={"100%"} loop={true} autoPlay={true} muted preload="none">
           <source src={featurevideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
