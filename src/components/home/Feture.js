@@ -7,7 +7,7 @@ const Feture = () => {
     <div className="text-white bg-black py-[120px] px-8 text-center">
       <div>
         <h1 className="text-whte text-[40px] md:text-[56px] lg:text-[80px] font-semibold font-Poppins">
-          Chart. Chat. Trade. Repeat
+          Eat. Sleep. Trade. Repeat.
         </h1>
         <h3 className="md:text-[28px] text-[18px] font-Noto font-normal mb-16">
           Join 30 millions traders and investors making better, brighter
