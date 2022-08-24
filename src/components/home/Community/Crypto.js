@@ -3,10 +3,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-import btn2 from "../../../assets/buttonimages/btn2.svg";
+import XTVCUNFI from "../../../assets/community/XTVCUNFI.svg";
 import Smcard from "../../Smcard";
 
-const Stocks = () => {
+const Crypto = () => {
   let option = {
     0: {
       items: 1,
@@ -39,8 +39,8 @@ const Stocks = () => {
         <Smcard
           className={index == 1 && "bg-[#8cc1ef26]"}
           key={index}
-          img={btn2}
-          CryptoName={"Test Stocks"}
+          img={XTVCUNFI}
+          CryptoName={"Test Protocol DAO / Tether"}
           price={2125}
           country={"USA"}
           percentage={"-0.73%"}
@@ -51,4 +51,4 @@ const Stocks = () => {
   );
 };
 
-export default Stocks;
+export default Crypto;

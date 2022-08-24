@@ -9,3 +9,34 @@
   z-index: -30;
   filter: contrast(90%);
 }
+
+/* Owl carousel Styling button */
+.left-arrow,
+.right-arrow {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.owl-prev:hover,
+.owl-next:hover,
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #fff !important;
+  color: #2962ff;
+}
+
+.disabled {
+  display: none !important;
+}
+/* -------------------- */

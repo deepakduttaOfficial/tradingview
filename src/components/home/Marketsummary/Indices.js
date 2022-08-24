@@ -25,12 +25,17 @@ const Indices = () => {
 
   return (
     <OwlCarousel
-      className="owl-theme"
+      className="owl-theme relative overflow-y-hidden h-20"
       margin={10}
       items={3}
       dots={false}
       refreshClass
       responsive={option}
+      nav
+      navText={[
+        "<div class='left-arrow top-5 left-0'><i class='fa-solid fa-chevron-left'></i></div>",
+        "<div class='right-arrow top-5 right-0'><i class='fa-solid fa-chevron-right'></i></div>",
+      ]}
     >
       {data.map((index) => (
         <Smcard

@@ -1,8 +1,12 @@
 import React from "react";
+import Community from "../components/home/Community/Community";
+import Educationalideas from "../components/home/Education/Educationalideas";
 import Feture from "../components/home/Feture";
 import Herosection from "../components/home/Herosection";
+import Ideas from "../components/home/Ideas/Ideas";
 import Marketsummary from "../components/home/Marketsummary/Marketsummary";
 import Snaps from "../components/home/Snaps/Snaps";
+import Videoidea from "../components/home/Videoidea/Videoidea";
 import { DownarrowIcon } from "../components/icons";
 import Navbar from "../components/navbar/Navbar";
 
@@ -18,9 +22,13 @@ const Home = () => {
         </div>
       </header>
       <Feture />
-      <div className="px-8">
+      <div className="md:px-8 px-4">
         <Marketsummary />
         <Snaps />
+        <Ideas />
+        <Community />
+        <Videoidea />
+        <Educationalideas />
       </div>
     </>
   );

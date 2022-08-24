@@ -33,7 +33,7 @@ const Snaps = () => {
   };
   const { bgImage, link, logo, cryptoName, date, title, body } = testData;
   return (
-    <div className="mt-[100px] mb-10">
+    <div className="mt-[100px]">
       <div>
         <a href="#" className="text-3xl font-bold hover:text-[#2962ff]">
           Snaps <RightArrow />
@@ -44,12 +44,17 @@ const Snaps = () => {
       </div>
       <div className="mt-10">
         <OwlCarousel
-          className="owl-theme"
+          className="owl-theme relative"
           margin={10}
           items={3}
           dots={false}
           refreshClass
           responsive={option}
+          nav
+          navText={[
+            "<div class='left-arrow top-36 left-0'><i class='fa-solid fa-chevron-left'></i></div>",
+            "<div class='right-arrow top-36 right-0'><i class='fa-solid fa-chevron-right'></i></div>",
+          ]}
         >
           {data.map((index) => (
             <MdCard

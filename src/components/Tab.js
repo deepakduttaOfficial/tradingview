@@ -13,9 +13,9 @@ const Tabs = ({ name, components }) => {
             return (
               <a
                 key={index}
-                className={
-                  "hover:bg-[#f0f3fa] focus:bg-[#f0f3fa] text-base font-normal font-Noto px-3 py-2 rounded-lg focus:text-[#2962ff] block leading-normal mr-3 "
-                }
+                className={`hover:bg-[#f0f3fa]  text-base font-normal font-Noto px-3 py-2 rounded-lg ${
+                  openTab === index && "text-[#2962ff] bg-[#f0f3fa]"
+                } block leading-normal mr-3`}
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(index);
@@ -29,7 +29,7 @@ const Tabs = ({ name, components }) => {
             );
           })}
         </ul>
-        <div className="mt-5">
+        <div className="mt-3">
           {components.map((components, index) => {
             return (
               <div

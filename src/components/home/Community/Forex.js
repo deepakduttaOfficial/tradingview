@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import btn2 from "../../../assets/buttonimages/btn2.svg";
 import Smcard from "../../Smcard";
 
-const Stocks = () => {
+const Forex = () => {
   let option = {
     0: {
       items: 1,
@@ -40,7 +40,7 @@ const Stocks = () => {
           className={index == 1 && "bg-[#8cc1ef26]"}
           key={index}
           img={btn2}
-          CryptoName={"Test Stocks"}
+          CryptoName={"Test Forex"}
           price={2125}
           country={"USA"}
           percentage={"-0.73%"}
@@ -51,4 +51,4 @@ const Stocks = () => {
   );
 };
 
-export default Stocks;
+export default Forex;

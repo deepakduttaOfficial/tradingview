@@ -3,7 +3,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-import btn2 from "../../../assets/buttonimages/btn2.svg";
+import shopify from "../../../assets/community/shopify.svg";
 import Smcard from "../../Smcard";
 
 const Stocks = () => {
@@ -39,11 +39,11 @@ const Stocks = () => {
         <Smcard
           className={index == 1 && "bg-[#8cc1ef26]"}
           key={index}
-          img={btn2}
-          CryptoName={"Test Stocks"}
-          price={2125}
+          img={shopify}
+          CryptoName={"Shopify Stocks "}
+          price={3247}
           country={"USA"}
-          percentage={"-0.73%"}
+          percentage={"-2.14%"}
           link={"#"}
         />
       ))}

@@ -12,7 +12,7 @@ const Smcard = ({
 }) => {
   return (
     <div
-      className={`card w-96 rounded-lg   ${
+      className={`card lg:w-96 rounded-lg ${
         !className && "hover:bg-[#e8edf7] bg-[#f4f7ff]"
       } ${className}`}
     >
