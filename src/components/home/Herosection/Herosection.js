@@ -1,6 +1,6 @@
 import React from "react";
-import { Dynamic } from "../Button";
-import { SearchIcon } from "../icons";
+import { Dynamic } from "../../Button";
+import { SearchIcon } from "../../icons";
 
 const Herosection = () => {
   return (
@@ -12,14 +12,14 @@ const Herosection = () => {
       </h1>
       <div>
         <div className="mt-7">
-          <label class="relative block ">
-            <span class="absolute left-4 top-[14px] flex items-center pl-2 bg-[#2962ff] text-white rounded-full h-[35px] w-[35px]">
+          <label className="relative block ">
+            <span className="absolute left-4 top-[14px] flex items-center pl-2 bg-[#2962ff] text-white rounded-full h-[35px] w-[35px]">
               <SearchIcon />
             </span>
             <input
               type="text"
               placeholder="Search markets here"
-              class="input input-bordered input-lg w-full max-w-xs rounded-full px-16 text-[#787b86] font-medium cursor-pointer"
+              className="input input-bordered input-lg w-full max-w-xs rounded-full px-16 text-[#787b86] font-medium cursor-pointer"
             />
           </label>
         </div>

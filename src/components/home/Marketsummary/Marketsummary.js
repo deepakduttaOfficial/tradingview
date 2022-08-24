@@ -19,7 +19,7 @@ const Marketsummary = () => {
           </p>
         </div>
         <div>
-          <a href="#" className="text-3xl font-bold hover:text-[#2962ff]">
+          <a href="/" className="text-3xl font-bold hover:text-[#2962ff]">
             Market summary <RightArrow />
           </a>
         </div>

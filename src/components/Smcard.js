@@ -1,5 +1,4 @@
 import React from "react";
-import btn1 from "../assets/buttonimages/btn1.svg";
 
 const Smcard = ({
   img,

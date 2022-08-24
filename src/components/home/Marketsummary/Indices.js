@@ -39,14 +39,14 @@ const Indices = () => {
     >
       {data.map((index) => (
         <Smcard
-          className={index == 1 && "bg-[#8cc1ef26]"}
+          className={index === 1 && "bg-[#8cc1ef26]"}
           key={index}
           img={btn1}
           CryptoName={"Test Indices"}
           price={2125}
           country={"USA"}
           percentage={"-0.73%"}
-          link={"#"}
+          link={"/"}
         />
       ))}
     </OwlCarousel>

@@ -4,9 +4,9 @@ import btn1 from "../assets/buttonimages/btn1.svg";
 export const MdButton = (name) => {
   return (
     <>
-      <a class="bg-primary px-4 py-2 text-white rounded-full cursor-pointer hover:bg-[#1e53e5] text-lg font-normal">
+      <button className="bg-primary px-4 py-2 text-white rounded-full cursor-pointer hover:bg-[#1e53e5] text-lg font-normal">
         {name.children}
-      </a>
+      </button>
     </>
   );
 };
@@ -14,9 +14,9 @@ export const MdButton = (name) => {
 export const BgButton = (name) => {
   return (
     <>
-      <a class="bg-primary px-8 py-4 text-white rounded-full cursor-pointer hover:bg-[#1e53e5] text-lg font-medium font-Noto">
+      <button className="bg-primary px-8 py-4 text-white rounded-full cursor-pointer hover:bg-[#1e53e5] text-lg font-medium font-Noto">
         {name.children}
-      </a>
+      </button>
     </>
   );
 };

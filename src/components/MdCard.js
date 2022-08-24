@@ -2,11 +2,11 @@ import React from "react";
 
 const MdCard = ({ bgImage, link, logo, cryptoName, date, title, body }) => {
   return (
-    <div class="card card-compact bg-base-100 shadow-xl p-2 rounded-lg hover:bg-[#F0F3FA]">
+    <div className="card card-compact bg-base-100 shadow-xl p-2 rounded-lg hover:bg-[#F0F3FA]">
       <figure>
         <img src={bgImage} className="rounded-lg" alt="crypto" loading="lazy" />
       </figure>
-      <div class="px-1 py-3">
+      <div className="px-1 py-3">
         <div className="flex items-center">
           <div>
             <img

@@ -37,7 +37,7 @@ const Editors = () => {
         <Bgcard
           key={index}
           img={"https://s3.tradingview.com/x/XA89kqEm_mid.webp"}
-          link="#"
+          link="/"
           title="HOW TO SET STOP LOSS | 3 STRATEGIES EXPLAINED"
           body="Hey traders, In this post, we will discuss 3 classic trading
         strategies and stop placement rules. 1️⃣The first trading strategy is
@@ -46,8 +46,8 @@ const Editors = () => {
           time="13 hours ago"
           commentNumber="18"
           boostNumber="402"
-          commentLink="#"
-          boostLink="#"
+          commentLink="/"
+          boostLink="/"
         />
       ))}
     </OwlCarousel>

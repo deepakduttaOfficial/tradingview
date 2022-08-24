@@ -3,7 +3,8 @@ import Bgcard from "../../Bgcard";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-const Stocks = () => {
+
+const Editors = () => {
   let option = {
     0: {
       items: 1,
@@ -35,15 +36,14 @@ const Stocks = () => {
       {data.map((index) => (
         <Bgcard
           key={index}
-          img={"https://s3.tradingview.com/k/kGscmHB5_mid.webp"}
+          img={"https://s3.tradingview.com/r/rLkjr2sQ_mid.webp"}
           link="/"
-          title="What Goes Up"
-          body="
-          Must come down. I get that energy futures NG1! is running and everyone expects energy to have a very strong winter. How is highest energy prices and lowering"
-          authorName=" VasilyTrader"
-          time="13 hours ago"
-          commentNumber="18"
-          boostNumber="402"
+          title="the Flasher"
+          body="Briefly flashes chart background colors as a visual alert whenever a condition occurs, from the insatiable mind of @scarf . Special thanks to @LucF for his advice on"
+          authorName="allanster"
+          time="Aug 15"
+          commentNumber="21"
+          boostNumber="169"
           commentLink="/"
           boostLink="/"
         />
@@ -52,4 +52,4 @@ const Stocks = () => {
   );
 };
 
-export default Stocks;
+export default Editors;

@@ -1,18 +1,18 @@
 import React from "react";
 import { RightArrow } from "../../icons";
 import Tabs from "../../Tab";
-import Crypto from "./Crypto";
 import Editors from "./Editors";
-import Stocks from "./Stocks";
+import Popular from "./Popular";
+import Recent from "./Recent";
 
-const Ideas = () => {
-  let names = ["Editors' picks", "Stocks", "Crypto"];
-  let components = [<Editors />, <Stocks />, <Crypto />];
+const PineScripts = () => {
+  let names = ["Editors' picks", "Popular", "Recent"];
+  let components = [<Editors />, <Popular />, <Recent />];
   return (
     <div className="my-10">
       <div>
         <a href="/" className="text-2xl font-bold hover:text-[#2962ff]">
-          Ideas <RightArrow />
+          Pine Scripts <RightArrow />
         </a>
       </div>
       <Tabs name={names} components={components} />
@@ -20,4 +20,4 @@ const Ideas = () => {
   );
 };
 
-export default Ideas;
+export default PineScripts;

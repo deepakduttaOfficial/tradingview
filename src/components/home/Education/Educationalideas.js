@@ -24,7 +24,7 @@ const Educationalideas = () => {
   return (
     <div className="my-10">
       <div>
-        <a href="#" className="text-2xl font-bold hover:text-[#2962ff]">
+        <a href="/" className="text-2xl font-bold hover:text-[#2962ff]">
           Educational ideas <RightArrow />
         </a>
       </div>
@@ -46,15 +46,15 @@ const Educationalideas = () => {
             <Bgcard
               key={index}
               img={"https://s3.tradingview.com/u/UMwCK18n_mid.webp"}
-              link="#"
+              link="/"
               title="Island Reversal Pattern"
               body="The Island Reversal pattern is when increased distributions in overnight activity cause gaps up and eventually volume exhaustion a second gap down forming an island of"
-              authorName="by SPYvsGME"
+              authorName="SPYvsGME"
               time="Aug 23"
               commentNumber="3"
               boostNumber="25"
-              commentLink="#"
-              boostLink="#"
+              commentLink="/"
+              boostLink="/"
             />
           ))}
         </OwlCarousel>

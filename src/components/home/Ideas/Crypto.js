@@ -37,15 +37,15 @@ const Crypto = () => {
         <Bgcard
           key={index}
           img={"https://s3.tradingview.com/w/W3liiG4W_mid.webp"}
-          link="#"
+          link="/"
           title="BTC HAVE BIG CHANCES BACK TO RESISTANCE (TARGET) ZONE above 22k"
           body="Hello my friends, today I want to talk with you about BTC. As I wrote in my previous idea when Btc was fully ended, 5th waves of bearish pattern rising wedge. Price"
           authorName="AtlasTrades"
           time="Aug 22"
           commentNumber="52"
           boostNumber="273"
-          commentLink="#"
-          boostLink="#"
+          commentLink="/"
+          boostLink="/"
         />
       ))}
     </OwlCarousel>

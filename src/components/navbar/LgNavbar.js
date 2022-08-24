@@ -11,14 +11,14 @@ import {
 const LgNavbar = () => {
   return (
     <>
-      <ul class="menu menu-horizontal p-0">
+      <ul className="menu menu-horizontal p-0">
         <li className="ml-1">
           <label className="font-medium hover:bg-[#fff3] rounded-full text-base px-4 py-2">
             Products
           </label>
-          <ul class="py-2 bg-white text-black rounded-lg w-[18rem] shadow-xl">
+          <ul className="py-2 bg-white text-black rounded-lg w-[18rem] shadow-xl">
             <li className="w-full border-b">
-              <a href="#" className="py-1 px-4  hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-1 px-4  hover:bg-[#f0f3fa] w-full">
                 <ChartIcon />
                 <div className="ml-2">
                   <span className="font-medium">Chart+</span>
@@ -31,7 +31,7 @@ const LgNavbar = () => {
             </li>
 
             <li className="w-full border-b">
-              <a href="#" className="py-1 px-4 hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-1 px-4 hover:bg-[#f0f3fa] w-full">
                 <ScreenerIcon />
 
                 <div className="ml-2">
@@ -45,7 +45,7 @@ const LgNavbar = () => {
             </li>
 
             <li className="w-full">
-              <a href="#" className="py-1 px-4 hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-1 px-4 hover:bg-[#f0f3fa] w-full">
                 <HeatmapIcon />
                 <div className="ml-2">
                   <span className="font-medium">Heatmaps</span>
@@ -61,14 +61,14 @@ const LgNavbar = () => {
 
         <li className="ml-1">
           <label
-            href="#"
+            href="/"
             className="font-medium hover:bg-[#fff3] rounded-full text-base px-3 py-2"
           >
             Community
           </label>
-          <ul class="py-2 bg-white text-black rounded-lg w-[16rem] shadow-xl ">
+          <ul className="py-2 bg-white text-black rounded-lg w-[16rem] shadow-xl ">
             <li className="w-full border-b">
-              <a href="#" className="py-2 px-4  hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-2 px-4  hover:bg-[#f0f3fa] w-full">
                 <LiveStrimeIcon />
                 <div className="ml-2">
                   <span className="font-medium">Live streams</span>
@@ -77,7 +77,7 @@ const LgNavbar = () => {
             </li>
 
             <li className="w-full">
-              <a href="#" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
                 <TradeIdeaIcon />
                 <div className="ml-2">
                   <span className="font-medium">Trade ideas</span>
@@ -88,15 +88,12 @@ const LgNavbar = () => {
         </li>
 
         <li className="ml-1 ">
-          <a
-            href="#"
-            className="font-medium hover:bg-[#fff3] rounded-full text-base px-3 py-2"
-          >
+          <label className="font-medium hover:bg-[#fff3] rounded-full text-base px-3 py-2">
             Markets
-          </a>
-          <ul class="py-2 bg-white text-black rounded-lg w-[15rem] shadow-xl">
+          </label>
+          <ul className="py-2 bg-white text-black rounded-lg w-[15rem] shadow-xl">
             <li className=" w-full border-b ">
-              <a href="#" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
                 <div className="ml-2">
                   <span className="font-medium">Snaps</span>
                 </div>
@@ -104,7 +101,7 @@ const LgNavbar = () => {
             </li>
 
             <li className="w-full border-b">
-              <a href="#" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
                 <div className="ml-2">
                   <span className="font-medium">Breaking news</span>
                 </div>
@@ -112,7 +109,7 @@ const LgNavbar = () => {
             </li>
 
             <li className="w-full">
-              <a href="#" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
+              <a href="/" className="py-2 px-4 hover:bg-[#f0f3fa] w-full">
                 <div className="ml-2">
                   <span className="font-medium">Sparks</span>
                 </div>

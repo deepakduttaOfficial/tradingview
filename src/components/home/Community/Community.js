@@ -10,7 +10,7 @@ const Community = () => {
   return (
     <div className="my-10">
       <div>
-        <a href="#" className="text-2xl font-bold hover:text-[#2962ff]">
+        <a href="/" className="text-2xl font-bold hover:text-[#2962ff]">
           Community favorites right now
         </a>
       </div>

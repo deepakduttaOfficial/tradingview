@@ -3,7 +3,8 @@ import Bgcard from "../../Bgcard";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-const Stocks = () => {
+
+const Popular = () => {
   let option = {
     0: {
       items: 1,
@@ -35,15 +36,14 @@ const Stocks = () => {
       {data.map((index) => (
         <Bgcard
           key={index}
-          img={"https://s3.tradingview.com/k/kGscmHB5_mid.webp"}
+          img={"https://s3.tradingview.com/q/Qt7fqntR_mid.webp"}
           link="/"
-          title="What Goes Up"
-          body="
-          Must come down. I get that energy futures NG1! is running and everyone expects energy to have a very strong winter. How is highest energy prices and lowering"
-          authorName=" VasilyTrader"
-          time="13 hours ago"
-          commentNumber="18"
-          boostNumber="402"
+          title="Breakout Probability (Expo)"
+          body="█ Overview Breakout Probability is a valuable indicator that calculates the probability of a new high or low and displays it as a level with its "
+          authorName="Zeiierman"
+          time="Jul 31"
+          commentNumber="11"
+          boostNumber="483"
           commentLink="/"
           boostLink="/"
         />
@@ -52,4 +52,4 @@ const Stocks = () => {
   );
 };
 
-export default Stocks;
+export default Popular;

@@ -35,7 +35,7 @@ const Snaps = () => {
   return (
     <div className="mt-[100px]">
       <div>
-        <a href="#" className="text-3xl font-bold hover:text-[#2962ff]">
+        <a href="/" className="text-3xl font-bold hover:text-[#2962ff]">
           Snaps <RightArrow />
         </a>
         <p className="text-lg font-normal font-Noto text-black mt-1">

@@ -1,6 +1,6 @@
 import React from "react";
-import { BgButton } from "../Button";
-import featurevideo from "../../assets/feature.mp4";
+import { BgButton } from "../../Button";
+import featurevideo from "../../../assets/feature.mp4";
 
 const Feture = () => {
   return (

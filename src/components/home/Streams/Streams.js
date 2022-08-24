@@ -6,7 +6,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-const Videoidea = () => {
+const Streams = () => {
   let option = {
     0: {
       items: 1,
@@ -25,7 +25,7 @@ const Videoidea = () => {
     <div className="my-10">
       <div>
         <a href="/" className="text-2xl font-bold hover:text-[#2962ff]">
-          Video ideas <RightArrow />
+          Streams <RightArrow />
         </a>
       </div>
       <div className="mt-10">
@@ -45,16 +45,14 @@ const Videoidea = () => {
           {data.map((index) => (
             <Bgcard
               key={index}
-              img={"https://s3.tradingview.com/5/5hVTZ3BP_mid.webp"}
-              link="#"
-              title="Let's Dollar Cost Average with Ethereum 🎯"
-              body="Hi Traders, Investors and Speculators 📉📈 Ev here. Been trading crypto since 2017 and later got into stocks. I have 3 board exams on financial markets and studied"
-              authorName="CryptoCheck-"
-              time="12 hours ago"
-              commentNumber="11"
-              boostNumber="17"
-              commentLink="#"
-              boostLink="#"
+              img={
+                "https://d3etl5p4eidc49.cloudfront.net/previews/hlJQIPY3w6_68x2ni-y4C8jlasBzyLe4.jpeg"
+              }
+              link="/"
+              title="Discussions"
+              body="Analysis And Discussions"
+              authorName="Abdukadir_Wardheere"
+              time="an hour ago"
             />
           ))}
         </OwlCarousel>
@@ -63,4 +61,4 @@ const Videoidea = () => {
   );
 };
 
-export default Videoidea;
+export default Streams;

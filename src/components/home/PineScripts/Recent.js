@@ -3,7 +3,8 @@ import Bgcard from "../../Bgcard";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-const Stocks = () => {
+
+const Recent = () => {
   let option = {
     0: {
       items: 1,
@@ -35,15 +36,14 @@ const Stocks = () => {
       {data.map((index) => (
         <Bgcard
           key={index}
-          img={"https://s3.tradingview.com/k/kGscmHB5_mid.webp"}
+          img={"https://s3.tradingview.com/y/YiFrIUW5_mid.webp"}
           link="/"
-          title="What Goes Up"
-          body="
-          Must come down. I get that energy futures NG1! is running and everyone expects energy to have a very strong winter. How is highest energy prices and lowering"
-          authorName=" VasilyTrader"
-          time="13 hours ago"
-          commentNumber="18"
-          boostNumber="402"
+          title="DCA 220824"
+          body="A script to check if DCA is an interesting way to invest."
+          authorName="tanoshimooo"
+          time="Jul 31"
+          commentNumber="11"
+          boostNumber="483"
           commentLink="/"
           boostLink="/"
         />
@@ -52,4 +52,4 @@ const Stocks = () => {
   );
 };
 
-export default Stocks;
+export default Recent;

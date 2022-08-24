@@ -37,7 +37,7 @@ const Forex = () => {
     >
       {data.map((index) => (
         <Smcard
-          className={index == 1 && "bg-[#8cc1ef26]"}
+          className={index === 1 && "bg-[#8cc1ef26]"}
           key={index}
           img={btn2}
           CryptoName={"Test Forex"}
