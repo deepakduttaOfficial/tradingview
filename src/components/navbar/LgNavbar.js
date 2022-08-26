@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // All icons
 import {
   ChartIcon,
@@ -18,7 +19,10 @@ const LgNavbar = () => {
           </label>
           <ul className="py-2 bg-white text-black rounded-lg w-[18rem] shadow-xl">
             <li className="w-full border-b">
-              <a href="/" className="py-1 px-4  hover:bg-[#f0f3fa] w-full">
+              <Link
+                to="/chart"
+                className="py-1 px-4  hover:bg-[#f0f3fa] w-full"
+              >
                 <ChartIcon />
                 <div className="ml-2">
                   <span className="font-medium">Chart+</span>
@@ -27,7 +31,7 @@ const LgNavbar = () => {
                     Often imitated, never duplicated
                   </span>
                 </div>
-              </a>
+              </Link>
             </li>
 
             <li className="w-full border-b">

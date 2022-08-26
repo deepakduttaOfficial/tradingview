@@ -23,12 +23,14 @@ module.exports = {
       colors: {
         primary: "#2962ff",
         black: "#000",
+        lightGray: "#f0f3fa",
+        gray: "#E0E3EB",
       },
     },
   },
   plugins: [require("daisyui")],
   daisyui: {
-    styled: false,
+    styled: true,
     themes: true,
     base: true,
     utils: true,
@@ -36,5 +38,13 @@ module.exports = {
     rtl: false,
     prefix: "",
     darkTheme: "light",
+    // themes: [
+    //   {
+    //     light: {
+    //       ...require("daisyui/src/colors/themes")["[data-theme=light]"],
+    //       info: "#E0E3EB",
+    //     },
+    //   },
+    // ],
   },
 };

@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font border-2 mt-32">
+    <footer className="text-gray-600 body-font border-t-2 border-gray mt-32">
       <div className="py-10 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col md:px-8 px-4">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10 px-5">
           <a
