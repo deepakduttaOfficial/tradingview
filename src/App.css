@@ -40,3 +40,18 @@
   display: none !important;
 }
 /* -------------------- */
+
+/* ---------- Scroll bar style ------------ */
+
+#modal::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* #modal::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+#modal::-webkit-scrollbar-thumb {
+  background: #434651;
+  border-radius: 10px;
+} */

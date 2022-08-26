@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { HorizontalDivider } from "../../divider";
-import { CrossbuttonIcon, SearchIcon } from "../icons";
+import { CompareIcon, CrossbuttonIcon, SearchIcon } from "../icons";
 import SearchResult from "./SearchResult";
 
-const Symbolsearch = () => {
+const Compare = () => {
   const [value, setValue] = useState("");
   const handleChange = (e) => {
     setValue(e.target.value);
@@ -16,20 +16,17 @@ const Symbolsearch = () => {
     <>
       <label
         aria-level="Symbol"
-        className="modal-button flex py-[5px] pl-2 pr-8 cursor-pointer hover:bg-lightGray justify-center items-center rounded-md tooltip tooltip-bottom"
+        className="modal-button flex cursor-pointer hover:bg-lightGray justify-center items-center rounded-md tooltip tooltip-bottom"
         data-tip="Symbol search"
-        for="my-modal"
+        for="Compare"
       >
-        <img
-          src={`https://s3-symbol-logo.tradingview.com/indices/s-and-p-500.svg`}
-          alt="crypto-name"
-          className="rounded-full h-4"
-        />
-        <span className="text-primary font-semibold ml-1">ES1!</span>
+        <span className="py-[5px] px-2 hover:bg-lightGray rounded-md">
+          <CompareIcon />
+        </span>
       </label>
 
       {/* Modal  */}
-      <input type="checkbox" id="my-modal" className="modal-toggle" />
+      <input type="checkbox" id="Compare" className="modal-toggle" />
       <div className="modal">
         <div
           className="modal-box w-12/12 max-w-[840px] p-0 rounded-md"
@@ -37,9 +34,9 @@ const Symbolsearch = () => {
         >
           <div className="sticky top-0 bg-white z-10">
             <div className="flex justify-between items-center px-5 py-3">
-              <h1 className="font-semibold text-xl">Symbol Search</h1>
+              <h1 className="font-semibold text-xl">Compare symbol</h1>
               <label
-                for="my-modal"
+                for="Compare"
                 className="p-2 hover:bg-lightGray rounded-md cursor-pointer"
               >
                 <CrossbuttonIcon />
@@ -70,8 +67,7 @@ const Symbolsearch = () => {
             </form>
             <HorizontalDivider />
             <div className="text-[#727c89] flex justify-between items-center">
-              <span className="py-3 px-6">Symble</span>
-              <span className="py-3 px-6 w-72">Description</span>
+              <span className="py-3 px-6">Recent symbols</span>
             </div>
           </div>
 
@@ -82,4 +78,4 @@ const Symbolsearch = () => {
   );
 };
 
-export default Symbolsearch;
+export default Compare;

@@ -1,15 +1,16 @@
 import React from "react";
-import VerticalDivider from "../divider";
+import { VerticalDivider } from "../divider";
+import Compare from "./Compare/Compare";
 import {
   AlertIcon,
   BarsIcon,
-  CompareIcon,
   IndicatorIcon,
   IndicatorTempleteIcon,
   MenuIcon,
   ReplayIcon,
 } from "./icons";
 import Symbolsearch from "./Stymbolsearch.js/Symbolsearch";
+import Time from "./Time/Time";
 
 const Topbar = () => {
   return (
@@ -32,23 +33,10 @@ const Topbar = () => {
         </div>
         <div className="flex ml-4" aria-level="Top-bar">
           <Symbolsearch />
+          <Compare />
 
-          <div
-            aria-label="Compare-Items"
-            className="tooltip tooltip-bottom "
-            data-tip="Compare or add Symble"
-          >
-            <button className="py-[5px] px-2 hover:bg-lightGray rounded-md">
-              <CompareIcon />
-            </button>
-          </div>
           <VerticalDivider />
-          <div
-            className="px-3 py-[2px] flex justify-center items-center cursor-pointer tooltip tooltip-bottom hover:bg-gray rounded-md"
-            data-tip="1 day"
-          >
-            <span>D</span>
-          </div>
+          <Time />
           <VerticalDivider />
           <div
             aria-label="Compare-Items"

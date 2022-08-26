@@ -117,3 +117,29 @@ export const ReplayIcon = () => {
     </svg>
   );
 };
+
+export const SearchIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+      <path
+        stroke="currentColor"
+        d="M12.4 12.5a7 7 0 1 0-4.9 2 7 7 0 0 0 4.9-2zm0 0l5.101 5"
+      ></path>
+    </svg>
+  );
+};
+
+export const CrossbuttonIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 17 17"
+      width="17"
+      height="17"
+      fill="#000"
+    >
+      <path d="m.58 1.42.82-.82 15 15-.82.82z"></path>
+      <path d="m.58 15.58 15-15 .82.82-15 15z"></path>
+    </svg>
+  );
+};
