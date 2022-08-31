@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   CommunityIcon,
   MarketIcon,
@@ -53,13 +54,16 @@ const SmNavbar = () => {
             </ul>
           </li>
           <li className="w-full">
-            <a href="/" className="py-[10px] px-4 hover:bg-[#f0f3fa] w-full">
+            <Link
+              to="/chart"
+              className="py-[10px] px-4 hover:bg-[#f0f3fa] w-full"
+            >
               <MarketIcon />
               <div className="ml-2 grow">
                 <span className="font-medium text-lg ">MarketIcon</span>
               </div>
               <RightArrow />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
