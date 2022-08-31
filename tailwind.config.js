@@ -17,6 +17,9 @@ module.exports = {
       Noto: ["Noto Sans JP", "sans-serif"],
     },
     extend: {
+      boxShadow: {
+        minShadow: "0 2px 4px #0003",
+      },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",
       },

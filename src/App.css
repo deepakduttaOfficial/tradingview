@@ -46,12 +46,15 @@
 #modal::-webkit-scrollbar {
   width: 0px;
 }
+#select::-webkit-scrollbar {
+  width: 2px;
+}
 
-/* #modal::-webkit-scrollbar-track {
+#select::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
-#modal::-webkit-scrollbar-thumb {
-  background: #434651;
+#select::-webkit-scrollbar-thumb {
+  background: #9598a1;
   border-radius: 10px;
-} */
+}

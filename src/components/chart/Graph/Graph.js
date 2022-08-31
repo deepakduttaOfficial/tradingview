@@ -6,7 +6,7 @@ const Graph = () => {
       {/* <a href="https://youtu.be/vnl1X3ZNrFY" className="text-primary mx-10">
         Link
       </a> */}
-      Chart
+      Chart lorem500
     </div>
   );
 };
