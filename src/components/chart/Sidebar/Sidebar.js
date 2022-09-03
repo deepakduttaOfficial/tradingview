@@ -18,7 +18,7 @@ const Sidebar = () => {
         <Cursor />
         <Trendline />
 
-        {/* <div
+        <div
           aria-label="Filter"
           className="flex justify-center items-center group relative mt-1"
         >
@@ -91,7 +91,7 @@ const Sidebar = () => {
           >
             <RightIncon />
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
