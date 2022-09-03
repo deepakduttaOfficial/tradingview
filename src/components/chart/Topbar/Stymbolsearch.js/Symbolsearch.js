@@ -18,7 +18,7 @@ const Symbolsearch = () => {
         aria-level="Symbol"
         className="modal-button flex py-[5px] pl-2 pr-8 cursor-pointer hover:bg-lightGray justify-center items-center rounded-md tooltip tooltip-bottom"
         data-tip="Symbol search"
-        for="my-modal"
+        htmlFor="my-modal"
       >
         <img
           src={`https://s3-symbol-logo.tradingview.com/indices/s-and-p-500.svg`}
@@ -39,7 +39,7 @@ const Symbolsearch = () => {
             <div className="flex justify-between items-center px-5 py-3">
               <h1 className="font-semibold text-xl">Symbol Search</h1>
               <label
-                for="my-modal"
+                htmlFor="my-modal"
                 className="p-2 hover:bg-lightGray rounded-md cursor-pointer"
               >
                 <CrossbuttonIcon />
@@ -49,7 +49,7 @@ const Symbolsearch = () => {
 
             <form onSubmit={search}>
               <label
-                for="default-search"
+                htmlFor="default-search"
                 className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
               >
                 Search

@@ -45,7 +45,7 @@ export const IndicatorIcon = () => {
       ></path>
       <path
         fill="#000"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M19 12a1 1 0 0 0-1 1v4h-3v-1a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1v2H7a1 1 0 0 0-1 1v4h17V13a1 1 0 0 0-1-1h-3zm0 10h3v-9h-3v9zm-1 0v-4h-3v4h3zm-4-4.5V22h-3v-6h3v1.5zM10 22v-3H7v3h3z"
       ></path>
     </svg>
@@ -62,7 +62,7 @@ export const IndicatorTempleteIcon = () => {
     >
       <path
         fill="#000"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M8 7h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zM6 8c0-1.1.9-2 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8zm11-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm-2 1c0-1.1.9-2 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V8zm-4 8H8a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zm-3-1a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H8zm9 1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm-2 1c0-1.1.9-2 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3z"
       ></path>
     </svg>
@@ -79,7 +79,7 @@ export const AlertIcon = () => {
     >
       <path
         fill="#000"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M8.5 6a3.5 3.5 0 0 0-2.926 5.422 8.527 8.527 0 0 1 4.848-4.848A3.482 3.482 0 0 0 8.5 6zM4 9.5c0 1.19.463 2.274 1.218 3.079A8.5 8.5 0 0 0 13.5 23h.5v-1h-.5a7.5 7.5 0 1 1 7.5-7.5v.5h1v-.5a8.53 8.53 0 0 0-.218-1.921 4.5 4.5 0 0 0-6.36-6.36 8.527 8.527 0 0 0-3.843-.001A4.5 4.5 0 0 0 4 9.5zm12.578-2.926a8.527 8.527 0 0 1 4.848 4.848 3.5 3.5 0 0 0-4.848-4.848zM13 14V9h1v6h-4v-1h3zm6 6h-4v1h4v4h1v-4h4v-1h-4v-4h-1v4z"
       ></path>
     </svg>
@@ -133,15 +133,15 @@ export const AccordionIcon = ({ className }) => {
   return (
     <svg
       data-accordion-icon=""
-      class={`w-4 h-4 rotate-180 shrink-0 ${className}`}
+      className={`w-4 h-4 rotate-180 shrink-0 ${className}`}
       fill="currentColor"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       ></path>
     </svg>
   );

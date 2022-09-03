@@ -4,7 +4,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import shopify from "../../../assets/community/shopify.svg";
-import Smcard from "../../Smcard";
+import Smcard from "../../card/Smcard";
 
 const Stocks = () => {
   let option = {

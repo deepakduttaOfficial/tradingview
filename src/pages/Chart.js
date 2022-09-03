@@ -12,8 +12,10 @@ const Chart = () => {
 
   return (
     <div className="bg-gray">
-      <Topbar time={time} />
-      <div className="flex mt-1">
+      <div className="z-50">
+        <Topbar time={time} />
+      </div>
+      <div className="flex mt-1 -z-50">
         <Sidebar />
         <timeContext.Provider value={timeValue}>
           <Graph />

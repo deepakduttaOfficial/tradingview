@@ -17,8 +17,8 @@ const Topbar = ({ time }) => {
     time(timeVal);
   };
   return (
-    <div className="flex flex-row  bg-white">
-      <div className="p-1 flex items-center ">
+    <div className="flex flex-row  bg-white overflow-x-clip" id="topbar">
+      <div className="p-1 flex items-center h-fit ">
         <div
           aria-label="Menu"
           className="py-[5px] px-2 cursor-pointer hover:bg-lightGray indicator relative"

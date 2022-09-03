@@ -1,6 +1,6 @@
 import React from "react";
 import { RightArrow } from "../../icons";
-import MdCard from "../../MdCard";
+import MdCard from "../../card/MdCard";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";

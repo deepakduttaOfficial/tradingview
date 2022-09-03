@@ -51,6 +51,12 @@
   width: 2px;
 }
 
+#topbar::-webkit-scrollbar {
+  width: px;
+}
+#topbar {
+  white-space: nowrap;
+}
 #select::-webkit-scrollbar-track {
   border-radius: 10px;
 }

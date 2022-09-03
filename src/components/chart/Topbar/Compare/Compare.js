@@ -18,7 +18,7 @@ const Compare = () => {
         aria-level="Symbol"
         className="modal-button flex cursor-pointer hover:bg-lightGray justify-center items-center rounded-md tooltip tooltip-bottom"
         data-tip="Symbol search"
-        for="Compare"
+        htmlFor="Compare"
       >
         <span className="py-[5px] px-2 hover:bg-lightGray rounded-md">
           <CompareIcon />
@@ -36,7 +36,7 @@ const Compare = () => {
             <div className="flex justify-between items-center px-5 py-3">
               <h1 className="font-semibold text-xl">Compare symbol</h1>
               <label
-                for="Compare"
+                htmlFor="Compare"
                 className="p-2 hover:bg-lightGray rounded-md cursor-pointer"
               >
                 <CrossbuttonIcon />
@@ -46,7 +46,7 @@ const Compare = () => {
 
             <form onSubmit={search}>
               <label
-                for="default-search"
+                htmlFor="default-search"
                 className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
               >
                 Search

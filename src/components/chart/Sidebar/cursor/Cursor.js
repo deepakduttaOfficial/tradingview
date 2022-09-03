@@ -4,22 +4,26 @@ import { ArrowIcon, CrossIcon, DotIcon, EraserIcon } from "./icons";
 const Cursor = () => {
   const [open, setOpen] = useState(false);
   const [icon, setIcon] = useState(<CrossIcon />);
+  const [option, setOption] = useState("Cross");
   // Main value
-  const [value, setValue] = useState("Cross");
+  const [value, setValue] = useState(1);
   // console.log(value);
 
-  const isClick = (Icon, val) => {
+  const isClick = (Icon, option, val) => {
     setOpen(!open);
-    setValue(val);
     setIcon(Icon);
+    setOption(option);
+    setValue(val);
   };
 
   const items = [
-    { Component: <CrossIcon />, value: "Cross" },
-    { Component: <DotIcon />, value: "Dot" },
-    { Component: <ArrowIcon />, value: "Arrow" },
-    { Component: <EraserIcon />, value: "Eraser" },
+    { Component: <CrossIcon />, option: "Cross", value: 1 },
+    { Component: <DotIcon />, option: "Dot", value: 2 },
+    { Component: <ArrowIcon />, option: "Arrow", value: 3 },
+    { Component: <EraserIcon />, option: "Eraser", value: 4 },
   ];
+
+  console.log(value);
 
   return (
     <div
@@ -28,7 +32,7 @@ const Cursor = () => {
     >
       <button
         className="hover:bg-lightGray p-1 rounded-md group tooltip tooltip-right text-black  focus-within:text-[#2962ff] cursor-default"
-        data-tip={value}
+        data-tip={option}
         onClick={() => {
           setOpen(true);
         }}
@@ -50,17 +54,17 @@ const Cursor = () => {
           {items.map((item, index) => (
             <p
               className={`px-3 py-2 cursor-pointer hover:bg-lightGray font-normal  text-sm text-left ${
-                value === item.value
+                option === item.option
                   ? "bg-blue-500 hover:bg-blue-600 text-white"
                   : ""
               } `}
               key={index}
               onClick={() => {
-                isClick(item.Component, item.value);
+                isClick(item.Component, item.option, item.value);
               }}
             >
               {item.Component}
-              <span className="ml-1">{item.value}</span>
+              <span className="ml-1">{item.option}</span>
             </p>
           ))}
         </div>

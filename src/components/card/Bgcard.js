@@ -1,6 +1,6 @@
 import React from "react";
-import comment from "../assets/comment.svg";
-import boost from "../assets/boost.svg";
+import comment from "../../assets/comment.svg";
+import boost from "../../assets/boost.svg";
 
 const Bgcard = ({
   img,

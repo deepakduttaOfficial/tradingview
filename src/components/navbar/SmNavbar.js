@@ -60,7 +60,7 @@ const SmNavbar = () => {
             >
               <MarketIcon />
               <div className="ml-2 grow">
-                <span className="font-medium text-lg ">MarketIcon</span>
+                <span className="font-medium text-lg ">Chart+</span>
               </div>
               <RightArrow />
             </Link>

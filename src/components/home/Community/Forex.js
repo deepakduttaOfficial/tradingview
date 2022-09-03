@@ -4,7 +4,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import btn2 from "../../../assets/buttonimages/btn2.svg";
-import Smcard from "../../Smcard";
+import Smcard from "../../card/Smcard";
 
 const Forex = () => {
   let option = {

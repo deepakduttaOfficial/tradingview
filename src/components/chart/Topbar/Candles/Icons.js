@@ -6,8 +6,9 @@ export const BarsIcon = () => {
       width="28"
       height="28"
       className="inline-block"
+      fill="currentColor"
     >
-      <g fill="none" stroke="#000" stroke-linecap="square">
+      <g fill="none" stroke="currentColor" strokeLinecap="square">
         <path d="M10.5 7.5v15M7.5 20.5H10M13.5 11.5H11M19.5 6.5v15M16.5 9.5H19M22.5 16.5H20"></path>
       </g>
     </svg>
@@ -22,7 +23,7 @@ export const CandlesIcon = () => {
       width="28"
       height="28"
       className="inline-block"
-      fill="#000"
+      fill="currentColor"
     >
       <path d="M17 11v6h3v-6h-3zm-.5-1h4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5z"></path>
       <path d="M18 7h1v3.5h-1zm0 10.5h1V21h-1z"></path>
@@ -40,7 +41,7 @@ export const HollowIcon = () => {
       width="28"
       height="28"
       className="inline-block"
-      fill="#000"
+      fill="currentColor"
     >
       <path d="M17 11v6h3v-6h-3zm-.5-1h4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5z"></path>
       <path d="M18 7h1v3.5h-1zm0 10.5h1V21h-1z"></path>
@@ -58,11 +59,11 @@ export const ColumnIcon = () => {
       width="28"
       height="28"
       className="inline-block"
-      fill="#000"
+      fill="currentColor"
     >
       <path
-        fill="#000"
-        fill-rule="evenodd"
+        fill="currentColor"
+        fillRule="evenodd"
         d="M12 7v14h5V7h-5Zm4 1h-3v12h3V8ZM19 15v6h5v-6h-5Zm4 1h-3v4h3v-4ZM5 12h5v9H5v-9Zm1 1h3v7H6v-7Z"
       ></path>
     </svg>
@@ -77,7 +78,7 @@ export const LineIcon = () => {
       width="28"
       height="28"
       className="inline-block"
-      fill="#000"
+      fill="currentColor"
     >
       <path
         fill="currentColor"
@@ -94,7 +95,7 @@ export const AreaIcon = () => {
       viewBox="0 0 28 28"
       width="28"
       height="28"
-      fill="#000"
+      fill="currentColor"
       className="inline-block"
     >
       <path d="M12.5 17.207L18.707 11h2l3.647-3.646-.708-.708L20.293 10h-2L12.5 15.793l-3-3-4.854 4.853.708.708L9.5 14.207z"></path>
@@ -112,17 +113,17 @@ export const BaselineIcon = () => {
       height="28"
       className="inline-block"
     >
-      <g fill="none" stroke="#000">
-        <path stroke-dasharray="1,1" d="M4 14.5h22"></path>
+      <g fill="none" stroke="currentColor">
+        <path strokeDasharray="1,1" d="M4 14.5h22"></path>
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeDasharray="round"
           d="M7.5 12.5l2-4 1 2 2-4 3 6"
         ></path>
-        <path stroke-linecap="round" d="M5.5 16.5l-1 2"></path>
+        <path strokeLinecap="round" d="M5.5 16.5l-1 2"></path>
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeDasharray="round"
           d="M17.5 16.5l2 4 2-4m2-4l1-2-1 2z"
         ></path>
       </g>
@@ -141,8 +142,8 @@ export const HighLowIcon = () => {
     >
       <path
         fill="currentColor"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M7.5 7H7v14h5V7H7.5zM8 20V8h3v12H8zm7.5-11H15v10h5V9h-4.5zm.5 9v-8h3v8h-3z"
       ></path>
     </svg>
