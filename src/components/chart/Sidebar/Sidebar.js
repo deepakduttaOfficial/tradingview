@@ -1,7 +1,7 @@
 import React from "react";
+import Cursor from "./cursor/Cursor";
 import {
   BrushIcon,
-  CrossIcon,
   FilterIcon,
   PatternIcon,
   PredictionIcon,
@@ -9,40 +9,14 @@ import {
   TextIcon,
   TrendLineIcon,
 } from "./icons";
+import Trendline from "./trendline/Trendline";
 
 const Sidebar = () => {
   return (
     <div className="bg-white w-[52px] flex flex-col items-center px-[1px] py-2 rounded-r-md  h-[92vh]">
       <div>
-        <div
-          aria-label="Cross bar"
-          className="flex justify-center items-center group relative mt-1"
-        >
-          <div className="hover:bg-lightGray p-1 rounded-md group">
-            <CrossIcon />
-          </div>
-          <div
-            className="invisible  group-hover:visible ml-[1px] absolute -right-1 group-hover:-right-[5px] hover:bg-lightGray hover:pl-1 rounded-md h-full flex items-center delay-150 tooltip tooltip-right"
-            data-tip="Cross"
-          >
-            <RightIncon />
-          </div>
-        </div>
-
-        <div
-          aria-label="Trends Line"
-          className="flex justify-center items-center group relative mt-1"
-        >
-          <div className="hover:bg-lightGray p-1 rounded-md group">
-            <TrendLineIcon />
-          </div>
-          <div
-            className="invisible  group-hover:visible ml-[1px] absolute -right-1 group-hover:-right-[5px] hover:bg-lightGray hover:pl-1 rounded-md h-full flex items-center delay-150 tooltip tooltip-right"
-            data-tip="Trend line tools"
-          >
-            <RightIncon />
-          </div>
-        </div>
+        <Cursor />
+        <Trendline />
 
         <div
           aria-label="Filter"

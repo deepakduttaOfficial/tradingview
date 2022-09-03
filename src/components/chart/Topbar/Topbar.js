@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { VerticalDivider } from "../divider";
+import Candles from "./Candles/Candles";
 import Compare from "./Compare/Compare";
 import {
   AlertIcon,
-  BarsIcon,
   IndicatorIcon,
   IndicatorTempleteIcon,
   MenuIcon,
@@ -12,7 +12,10 @@ import {
 import Symbolsearch from "./Stymbolsearch.js/Symbolsearch";
 import Time from "./Time/Time";
 
-const Topbar = () => {
+const Topbar = ({ time }) => {
+  const timeValue = (timeVal) => {
+    time(timeVal);
+  };
   return (
     <div className="flex flex-row  bg-white">
       <div className="p-1 flex items-center ">
@@ -36,17 +39,9 @@ const Topbar = () => {
           <Compare />
 
           <VerticalDivider />
-          <Time />
+          <Time timeValue={timeValue} />
           <VerticalDivider />
-          <div
-            aria-label="Compare-Items"
-            className="tooltip tooltip-bottom "
-            data-tip="Bars"
-          >
-            <button className="py-[5px] px-2 hover:bg-lightGray rounded-md">
-              <BarsIcon />
-            </button>
-          </div>
+          <Candles />
           <VerticalDivider />
           <div
             aria-level="Indicators"

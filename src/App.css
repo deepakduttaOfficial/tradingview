@@ -1,5 +1,6 @@
 .hero {
   background-image: url(./assets/hero.webp);
+  background-color: #000000;
   height: 100vh;
   left: 0;
   position: absolute;
