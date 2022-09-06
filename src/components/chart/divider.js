@@ -2,7 +2,7 @@ import React from "react";
 
 export const VerticalDivider = () => {
   return (
-    <div aria-level="Divider" className="h-6 w-[2px] bg-gray m-auto mx-2"></div>
+    <div aria-level="Divider" className="h-6 w-[2px] bg-gray m-auto"></div>
   );
 };
 

@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        minShadow: "0 2px 4px #0003",
+        minShadow: "0 2px 6px #6a6d7899",
       },
       backgroundImage: {
         hero: "url('./assets/hero.webp')",

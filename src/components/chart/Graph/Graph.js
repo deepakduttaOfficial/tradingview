@@ -1,17 +1,26 @@
 import React, { useContext } from "react";
 import { timeContext } from "../../../context/timeContext";
-
+import Favorite from "../mobeblecomponents/Favorite";
+import TradingViewWidget from "react-tradingview-widget";
 const Graph = () => {
-  const time = useContext(timeContext);
+  // const time = useContext(timeContext);
+
   return (
-    <div className="w-[100%] h-[92vh] bg-white ml-1 p-10 rounded-md">
-      {/* <a href="https://youtu.be/vnl1X3ZNrFY" className="text-primary mx-10">
-        Link
-      </a> */}
-      <div>
-        This is a time :
-        <h1 className="inline-block text-xl font-extrabold">{time}</h1>
-      </div>
+    <div className="w-[100%] h-[100vh] bg-white   rounded-md">
+      <TradingViewWidget
+        symbol={"EURUSD"}
+        // height={"100%"}
+        width={"100%"}
+        hide_side_toolbar={false}
+        withdateranges={true}
+        show_popup_button={true}
+        popup_width={"1000"}
+        popup_height={"650"}
+        className="graph"
+        toolbar_bg={"#f1f3f6"}
+        indicator={false}
+        locale="in"
+      />
     </div>
   );
 };

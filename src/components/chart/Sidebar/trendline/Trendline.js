@@ -7,6 +7,14 @@ import {
   RayIcon,
   TrendLineIcon,
   HorizontalIcon,
+  HorizontalRayIcon,
+  VerticalLineIcon,
+  CrossIcon,
+  ParallelIcon,
+  RegressionIcon,
+  FlatIcon,
+  DisjointIcon,
+  AnchoredIcon,
 } from "./icons";
 
 const Trendline = () => {
@@ -33,6 +41,14 @@ const Trendline = () => {
     { Component: <ExtendedIcon />, option: "Extended Line", value: 5 },
     { Component: <AngleIcon />, option: "Trend Angle", value: 6 },
     { Component: <HorizontalIcon />, option: "Horizontal Line", value: 7 },
+    { Component: <HorizontalRayIcon />, option: "Horizontal Ray", value: 8 },
+    { Component: <VerticalLineIcon />, option: "Vertical Line", value: 9 },
+    { Component: <CrossIcon />, option: "Cross Line", value: 10 },
+    { Component: <ParallelIcon />, option: "Parallel Channel", value: 11 },
+    { Component: <RegressionIcon />, option: "Regression Trend", value: 12 },
+    { Component: <FlatIcon />, option: "Flat Top/Bottom", value: 13 },
+    { Component: <DisjointIcon />, option: "Disjoint Channel", value: 14 },
+    { Component: <AnchoredIcon />, option: "Anchored VWAP", value: 15 },
   ];
   console.log(value);
   return (
@@ -50,7 +66,7 @@ const Trendline = () => {
         {Icon}
       </div>
       <ul
-        className={`absolute top-3 left-11 z-40 w-52 bg-[#fff] border border-gray py-2 shadow-2xl  overflow-scroll rounded-md
+        className={`absolute top-0 left-11 z-40 w-52 bg-[#fff] border border-gray shadow-2xl  overflow-scroll rounded-md max-h-[82vh] 
         ${!open ? "hidden" : "block"} `}
         id="select"
       >

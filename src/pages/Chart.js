@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Graph from "../components/chart/Graph/Graph";
+import Favorite from "../components/chart/mobeblecomponents/Favorite";
 import Sidebar from "../components/chart/Sidebar/Sidebar";
 import Topbar from "../components/chart/Topbar/Topbar";
 import { timeContext } from "../context/timeContext";
@@ -12,15 +13,16 @@ const Chart = () => {
 
   return (
     <div className="bg-gray">
-      <div className="z-50">
+      {/* <div className="z-50">
         <Topbar time={time} />
       </div>
+      <Favorite />
       <div className="flex mt-1 -z-50">
         <Sidebar />
         <timeContext.Provider value={timeValue}>
-          <Graph />
         </timeContext.Provider>
-      </div>
+      </div> */}
+      <Graph />
     </div>
   );
 };

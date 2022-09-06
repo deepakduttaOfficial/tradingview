@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { FavIcon } from "../icons";
+import { addtoItem, getallItems } from "./helper/helper";
 import { ArrowIcon, CrossIcon, DotIcon, EraserIcon } from "./icons";
 
 const Cursor = () => {
@@ -23,8 +25,13 @@ const Cursor = () => {
     { Component: <EraserIcon />, option: "Eraser", value: 4 },
   ];
 
-  console.log(value);
-
+  const isFav = () => {
+    addtoItem("icon");
+    console.log("Click");
+  };
+  useEffect(() => {
+    console.log(getallItems());
+  }, [icon]);
   return (
     <div
       aria-label="Cross bar"
@@ -53,7 +60,7 @@ const Cursor = () => {
         >
           {items.map((item, index) => (
             <p
-              className={`px-3 py-2 cursor-pointer hover:bg-lightGray font-normal  text-sm text-left ${
+              className={`px-3 py-2 cursor-pointer hover:bg-lightGray font-normal  text-sm text-left flex items-center w-full justify-between ${
                 option === item.option
                   ? "bg-blue-500 hover:bg-blue-600 text-white"
                   : ""
@@ -63,8 +70,19 @@ const Cursor = () => {
                 isClick(item.Component, item.option, item.value);
               }}
             >
-              {item.Component}
-              <span className="ml-1">{item.option}</span>
+              <div>
+                {item.Component}
+                <span className="ml-1">{item.option}</span>
+              </div>
+
+              <button
+                className="inline-block"
+                onClick={() => {
+                  isFav(item.Component);
+                }}
+              >
+                <FavIcon />
+              </button>
             </p>
           ))}
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Cursor from "./cursor/Cursor";
+import Fib from "./fib/Fib";
 import {
   BrushIcon,
   FilterIcon,
@@ -13,25 +14,14 @@ import Trendline from "./trendline/Trendline";
 
 const Sidebar = () => {
   return (
-    <div className="bg-white w-[52px] flex flex-col items-center px-[1px] py-2 rounded-r-md  h-[92vh]">
+    <div
+      className="bg-white w-[52px] flex flex-col items-center px-[1px] py-2 rounded-r-md  h-[92vh] "
+      id="topbar"
+    >
       <div>
         <Cursor />
         <Trendline />
-
-        <div
-          aria-label="Filter"
-          className="flex justify-center items-center group relative mt-1"
-        >
-          <div className="hover:bg-lightGray p-1 rounded-md group">
-            <FilterIcon />
-          </div>
-          <div
-            className="invisible  group-hover:visible ml-[1px] absolute -right-1 group-hover:-right-[5px] hover:bg-lightGray hover:pl-1 rounded-md h-full flex items-center delay-150 tooltip tooltip-right"
-            data-tip="Gann and Fibonacci Tools"
-          >
-            <RightIncon />
-          </div>
-        </div>
+        <Fib />
 
         <div
           aria-label="Filter"

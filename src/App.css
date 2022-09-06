@@ -52,7 +52,7 @@
 }
 
 #topbar::-webkit-scrollbar {
-  width: px;
+  width: 0;
 }
 #topbar {
   white-space: nowrap;
@@ -64,4 +64,8 @@
 #select::-webkit-scrollbar-thumb {
   background: #9598a1;
   border-radius: 10px;
+}
+
+.tv-header__link {
+  display: none !important;
 }
